@@ -501,11 +501,65 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <p class="modal-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis laboriosam quod impedit
-          reiciendis ad repellat, quas nulla vero odio pariatur accusamus ut totam qui, illo harum?
-          Fugit, itaque. Tenetur, culpa.
-        </p>
+        <!-- <p class="modal-text"></p> -->
+        <form class="modal-form">
+          <p class="modal-text">Залиште свої дані, ми вам передзвонимо</p>
+
+          <label class="modal-form__field" for="input-name">
+            <span>Ім'я</span>
+            <div class="modal-items">
+              <svg class="svg-modal">
+                <use href="./images/icons.svg#person"></use>
+              </svg>
+              <input class="filed-input" type="input-name" name="name" required id="input-name" />
+            </div>
+          </label>
+
+          <label class="modal-form__field" for="input-name">
+            <span>Телефон</span>
+            <div class="modal-items">
+              <svg class="svg-modal">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+              <input
+                class="filed-input"
+                type="input-phone"
+                name="phone"
+                required
+                id="input-phone"
+              />
+            </div>
+          </label>
+
+          <label class="modal-form__field" for="input-mail">
+            <span>Пошта</span>
+            <div class="modal-items">
+              <svg class="svg-modal">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+              <input
+                class="filed-input"
+                type="input-email"
+                name="email"
+                required
+                id="input-email"
+              />
+            </div>
+          </label>
+
+          <label class="modal-form__field" for="input-massage">
+            <span>Коментар</span>
+            <textarea name="feedback" rows="5" placeholder="Введіть текст"></textarea>
+          </label>
+
+          <label class="modal-form__field modal-form-contract">
+            <input type="checkbox" name="hobby" value=" " checked />
+            Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
+          </label>
+
+          <button type="submit" class="modal-form-bt">Відправити</button>
+        </form>
+
         <button type="button" class="button-modal" data-modal-close>
           <svg class="button-modal-svg"><use href="./images/icons.svg#close"></use></svg>
         </button>
