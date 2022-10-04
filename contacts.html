@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="Web Studio" content="test" />
+    <title>portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- normalaize -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header-border">
+      <div class="container nav-main">
+        <!-- logo -->
+        <div class="list">
+          <a href="./index.html" class="logo">Web<span class="logo-header">Studio</span> </a>
+        </div>
+        <!-- navigation-->
+        <nav class="nav">
+          <ul class="nav-main nav-box">
+            <li class="item nav-box-item">
+              <a href="./index.html" class="link">Студія</a>
+            </li>
+            <li class="item nav-box-item">
+              <!--  target="_blank" - new page -->
+              <a href="./portfolio.html" class="link">Портфоліо</a>
+            </li>
+            <li class="item nav-box-item">
+              <a href="./contacts.html" class="link current">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- контакти-->
+        <ul class="nav-links">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="nav-contact">
+              <svg class="contact-icon" width="16" height="12">
+                <use href="./images/icons.svg#envelope"></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="item">
+            <a href="tel:+380961111111" class="nav-contact">
+              <svg class="contact-icon" width="10" height="16">
+                <use href="./images/icons.svg#smartphone"></use></svg
+              >+38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <button tuce="button" class="herobt" data-modal-open>Замовити послугу</button>
+
+      <section class="section wawd-padding">
+        <div class="wawd container">
+          <h2>Чим ми займаємося</h2>
+          <ul class="list items">
+            <li class="item">
+              <div class="wawd-card">
+                <div class="wawd-card-item">
+                  <img src="./images/img1.jpg" width="370" alt="1" />
+                </div>
+                <p class="wawd-text">ДЕСКТОПНІ ДОДАТКИ</p>
+              </div>
+            </li>
+            <!-- <li class="item">
+              <div class="wawd-card-item">
+                <div class="wawd-card">
+                  <img src="./images/img2.jpg" width="370" alt="2" />
+                </div>
+                <p class="wawd-text">МОБІЛЬНІ ДОДАТКИ</p>
+              </div>
+            </li>
+            <li class="item">
+              <div class="wawd-card-item">
+                <div class="wawd-card">
+                  <img src="./images/img3.jpg" width="370" alt="3" />
+                </div>
+                <p class="wawd-text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
+              </div>
+            </li> -->
+          </ul>
+        </div>
+      </section>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis laboriosam quod impedit
+            reiciendis ad repellat, quas nulla vero odio pariatur accusamus ut totam qui, illo
+            harum? Fugit, itaque. Tenetur, culpa.
+          </p>
+          <button type="button" class="herobt" data-modal-close>Закрити</button>
+        </div>
+      </div>
+    </main>
+    <footer class="footor-page">
+      <div class="container footor">
+        <div class="footor-all">
+          <div>
+            <a href="./index.html" class="logo">Web<span class="logo-footer">Studio</span> </a>
+            <address class="logo-margin">
+              <div>
+                <ul class="address-footer">
+                  <li class="item">
+                    <a
+                      target="_blank"
+                      href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
+                      class="address-link"
+                    >
+                      м. Київ, пр-т Лесі Українки, 26
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="mailto:info@devstudio.com" class="address-contact"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li class="item">
+                    <a href="tel:+380961111111" class="address-contact">+38 096 111 11 11</a>
+                  </li>
+                </ul>
+              </div>
+            </address>
+          </div>
+          <div class="social-padding">
+            <h2 class="social-title">ПРИЄДНУЙТЕСЬ</h2>
+            <ul class="social-list">
+              <li class="item">
+                <a href="" class="social-links">
+                  <svg class="social-icons"><use href="./images/icons.svg#instagram"></use></svg
+                ></a>
+              </li>
+              <li class="item">
+                <a href="" class="social-links">
+                  <svg class="social-icons"><use href="./images/icons.svg#twitter"></use></svg
+                ></a>
+              </li>
+              <li class="item">
+                <a href="" class="social-links">
+                  <svg class="social-icons"><use href="./images/icons.svg#facebook"></use></svg
+                ></a>
+              </li>
+              <li class="item">
+                <a href="" class="social-links">
+                  <svg class="social-icons">
+                    <use href="./images/icons.svg#linkedin"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
