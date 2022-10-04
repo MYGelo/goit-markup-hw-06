@@ -732,6 +732,7 @@ p {
 }
 
 .footor_social {
+  margin-left: 93px;
 }
 .footor__social__text {
   width: 358px;
@@ -851,8 +852,8 @@ p {
 }
 .social-padding {
   padding-top: 12px;
-  margin-right: 93px;
 }
+
 .clients-title {
   font-weight: 700;
   font-size: 36px;
