@@ -969,6 +969,7 @@ p {
 .form-item {
   width: 100%;
   border: 1px solid transparent;
+  outline: none;
 }
 .form-area {
   width: 448px;
@@ -979,6 +980,7 @@ p {
   border-radius: 4px;
 
   resize: none;
+  outline: none;
 
   font-family: Roboto;
   font-size: 12px;
@@ -986,4 +988,7 @@ p {
   line-height: 14px;
   letter-spacing: 0.01em;
   text-align: left;
+}
+.form-area:hover {
+  border: 1px solid var(--accent-color);
 }
