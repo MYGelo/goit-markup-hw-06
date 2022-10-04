@@ -346,6 +346,20 @@ p {
   margin: auto;
   padding: 0;
 }
+
+.footor-social-bt {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  border-radius: 4px;
+  border: 1px solid var(--accent-color);
+  background: var(--accent-color);
+  color: var(--primery-white-color);
+}
 /* portfolio */
 .section-portfolio {
   text-align: center;
@@ -673,6 +687,9 @@ p {
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
+
+  text-transform: uppercase;
+
   margin-bottom: 20px;
   letter-spacing: 0.03em;
   text-align: left;
@@ -712,6 +729,25 @@ p {
 .social-icons {
   width: 20px;
   height: 20px;
+}
+
+.footor_social {
+}
+.footor__social__text {
+  width: 358px;
+  height: 50px;
+  border-radius: 4px;
+  padding: 14px 15px;
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  text-align: left;
+
+  border: 1px solid #ffffff4d;
+  background-color: transparent;
 }
 
 /* address*/
@@ -815,6 +851,7 @@ p {
 }
 .social-padding {
   padding-top: 12px;
+  margin-right: 93px;
 }
 .clients-title {
   font-weight: 700;
