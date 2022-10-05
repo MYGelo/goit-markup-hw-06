@@ -959,7 +959,10 @@ p {
 
   transition: border 250ms var(--cubic-bezier), fill 250ms;
 }
-
+.modal-items:hover,
+.modal-items:focus {
+  fill: var(--accent-color);
+}
 .modal-form-contract {
   flex-direction: inherit;
   justify-content: space-around;
@@ -991,19 +994,18 @@ p {
   color: var(--second-color);
   transition: border 250ms var(--cubic-bezier);
 }
-
-.form-item:hover {
-  border: 1px solid var(--accent-color);
+.form-item:focus + .svg-modal {
   fill: var(--accent-color);
 }
-
 .form-item:focus-within {
   border-color: var(--accent-color);
+  color: var(--accent-color);
 }
 .modal-form-contract-text {
 }
 
-.form-area:hover {
+.form-area:hover,
+.form-area:focus {
   border: 1px solid var(--accent-color);
 }
 
