@@ -976,6 +976,9 @@ p {
   letter-spacing: 0.03em;
   text-align: left;
 
+  display: flex;
+  align-items: center;
+
   color: var(--second-color);
 }
 .modal-form-contract-link {
@@ -1013,4 +1016,23 @@ p {
   text-align: left;
 
   transition: border 250ms var(--cubic-bezier);
+}
+.checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.5;
+}
+.checkbox1 {
+  width: 16px;
+  height: 15px;
+  border-radius: 3px;
+  border: 2px solid #212121;
+}
+
+.checkbox:checked + .checkbox1 {
+  content: ' ';
+  width: 16px;
+  height: 15px;
+  background-color: var(--accent-color);
+  background-image: url(../images/icons.svg#email);
 }
