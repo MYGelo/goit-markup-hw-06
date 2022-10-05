@@ -1020,7 +1020,7 @@ p {
 .checkbox {
   position: absolute;
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0;
 }
 .checkbox1 {
   width: 16px;
@@ -1031,8 +1031,10 @@ p {
 
 .checkbox:checked + .checkbox1 {
   content: ' ';
-  width: 16px;
-  height: 15px;
-  background-color: var(--accent-color);
-  background-image: url(../images/icons.svg#email);
+
+  background-image: url('../images/icon-check.svg');
+
+  background-size: contain;
+
+  border: none;
 }
