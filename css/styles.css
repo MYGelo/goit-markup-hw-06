@@ -938,8 +938,10 @@ p {
   color: var(--second-color);
 }
 .svg-modal {
+  position: absolute;
   width: 18px;
   height: 18px;
+  transform: translate(15px);
 }
 .modal-form__field {
   position: relative;
@@ -952,15 +954,10 @@ p {
 .modal-items {
   display: flex;
   align-items: center;
-  border: 1px solid #21212133;
+  border: 1px solid transparent;
   border-radius: 4px;
-  padding: 8px 15px;
 
   transition: border 250ms var(--cubic-bezier), fill 250ms;
-}
-.modal-items:hover {
-  border: 1px solid var(--accent-color);
-  fill: var(--accent-color);
 }
 
 .modal-form-contract {
@@ -987,8 +984,21 @@ p {
 
 .form-item {
   width: 100%;
-  border: 1px solid transparent;
+  border: 1px solid #21212133;
   outline: none;
+  padding: 8px 42px;
+  border-radius: 4px;
+  color: var(--second-color);
+  transition: border 250ms var(--cubic-bezier);
+}
+
+.form-item:hover {
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.form-item:focus-within {
+  border-color: var(--accent-color);
 }
 .modal-form-contract-text {
 }
