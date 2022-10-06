@@ -317,6 +317,7 @@ p {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .button-modal {
+  cursor: pointer;
   position: absolute;
   background: white;
   border: 0;
@@ -356,6 +357,7 @@ p {
 }
 
 .footor-social-bt {
+  cursor: pointer;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -367,6 +369,12 @@ p {
   border: 1px solid var(--accent-color);
   background: var(--accent-color);
   color: var(--primery-white-color);
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
 
   transition: background-color 250ms var(--cubic-bezier);
 }
@@ -758,12 +766,19 @@ p {
   font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 1.25;
   letter-spacing: 0.03em;
   text-align: left;
 
+  outline: none;
+  color: #ffffff99;
+
   border: 1px solid #ffffff4d;
   background-color: transparent;
+}
+.footor__social__text:focus-within {
+  border-color: var(--accent-color);
+  color: var(--primery-white-color);
 }
 
 /* address*/
@@ -1035,6 +1050,7 @@ p {
   opacity: 0;
 }
 .checkbox1 {
+  cursor: pointer;
   width: 16px;
   height: 15px;
   border-radius: 3px;
