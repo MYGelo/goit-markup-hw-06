@@ -334,6 +334,10 @@ p {
   border-radius: 50%;
 }
 
+.button-modal-svg:hover,
+.button-modal-svg:focus {
+  fill: var(--accent-color);
+}
 .modal-form-bt {
   width: 200px;
   height: 50px;
@@ -1068,6 +1072,7 @@ p {
 }
 
 .contact {
+  text-align: center;
   margin-top: 20px;
   margin-bottom: 30px;
 }
